@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Importance of Music Education</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    #pictogram-section {
+  background-color: #f8fafc;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+#pictogram-section h2 {
+  color: #1d4ed8;
+}
+
+#pictogram-section p {
+  color: #374151;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+    #bylica-quote {
+  background-color: #fefce8;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.expand-box {
+  background: white;
+  border: 2px solid #fde68a;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.quote-toggle-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: #92400e;
+}
+
+#bylica-content {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+#bylica-content blockquote {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #f59e0b;
+  font-style: italic;
+  color: #1f2937;
+}
+    #flip-facts {
+  background: #f0f9ff;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.flip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.flip-card {
+  background: transparent;
+  width: 48%;
+  height: 220px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus-within .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.05);
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: white;
+  color: #1f2937;
+}
+
+.flip-card-front {
+  background-color: #e0f2fe;
+}
+
+.flip-card-back {
+  background-color: #fef3c7;
+  transform: rotateY(180deg);
+}
+    :root {
+      --primary: #3b82f6;
+      --secondary: #10b981;
+      --bg: #f9fafb;
+      --text: #111827;
+      --muted: #6b7280;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--text);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+      background: white;
+      border-radius: 0.75rem;
+      padding: 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    section img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+    p {
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .quote {
+      font-style: italic;
+      background: #fefce8;
+      padding: 1rem;
+      border-left: 5px solid var(--primary);
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+
+    </html>
+  Presented by Nia Harmon, Tara Nguyen, and Clara Faulkner
+  </section>
+  <header>
+    <h1>🎶 The Importance of Music Education</h1>
+    <nav>
+      <ul>
+        <li><a href="#problem">The Problem</a></li>
+        <li><a href="#solution">The Solution</a></li>
+        <li><a href="#why-music">Why Music Matters</a></li>
+        <li><a href="#evidence">Evidence</a></li>
+        <li><a href="#charts">Charts</a></li>
+        <li><a href="#action">Take Action</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="problem">
+        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1350&q=80" 
+             alt="Underfunded classroom with diverse students" 
+             style="width:100%; border-radius: 1rem; margin-bottom: 1rem;">
+        <h2>The Problem</h2>
+        <p>Music education is disappearing from public schools, particularly in underfunded districts. Budget cuts and shifting educational priorities have led to a decline in access to music programs, disproportionately affecting low-income students and communities of color.</p>
+        <p>The absence of music education deprives students of not just creativity but of developmental tools that help them succeed academically, emotionally, and socially.</p>
+      </section>
+      <section id="solution">
+        <h2>The Solution</h2>
+        <p>
+          Nonprofit organizations like <strong>Save The Music</strong> and <strong>Little Kids Rock</strong> provide instruments, curriculum, and training to underserved schools. Their programs increase attendance, test scores, and student confidence.
+        </p>
+        <div class="quote">
+          “We’re constantly having to prove that what we’re doing matters—through numbers, testimonials, videos, anything we can gather.” 
+          <br>– John Glennon
+        </div>
+      </section>
+    </section>
+    <section id="pictogram-section">
+        <h2>📊 Music Education Access: Visualized</h2>
+        <p>This pictogram represents the millions of students who still lack access to music and arts education programs in the U.S.</p>
+      
+        <div class="flourish-embed flourish-pictogram" data-src="visualisation/22332675" style="margin-top: 1.5rem;">
+          <script src="https://public.flourish.studio/resources/embed.js"></script>
+          <noscript>
+            <img 
+              src="https://public.flourish.studio/visualisation/22332675/thumbnail" 
+              width="100%" 
+              alt="pictogram visualization" 
+              style="border-radius: 1rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);" />
+          </noscript>
+        </div>
+      </section>
+
+    <section id="why-music">
+      <h2>🎵 Why Music Matters</h2>
+      <p>Music activates more parts of the brain than almost any other activity. It engages memory, motor coordination, creativity, and emotion. Early exposure to music has been shown to improve language acquisition, math performance, and emotional regulation.</p>
+      <div class="quote">“Music allows students with learning differences to succeed without feeling ‘less than.’” – Lily O'Mara</div>
+      <p>Studies confirm that music is a critical support system for students facing systemic barriers to equity in education.</p>
+    </section>
+    <section id="evidence">
+        <h2>📊 Supporting Evidence</h2>
+        <table>
+          <thead>
+            <tr><th>Indicator</th><th>With Music Education</th><th>Without Music Education</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Graduation Rate</td><td>90%</td><td>72%</td></tr>
+            <tr><td>Math Proficiency</td><td>85%</td><td>65%</td></tr>
+            <tr><td>Reading Proficiency</td><td>88%</td><td>66%</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <h2>💬 Real Voices from the Field</h2>
+      <p>Quotes from educators across Massachusetts about the value—and challenges—of music education:</p>
+    
+      <div class="carousel-container">
+        <div class="quote-carousel active">
+          <blockquote>
+            “Year after year we face Prop 2 ½ override votes, and they don’t always pass. As a result, the arts are sometimes the first to be cut.”
+          </blockquote>
+          <cite>– Anthony Beatrice, Deputy Chief of Teaching and Learning, BPS & President, MMEA</cite>
+        </div>
+    
+        <div class="quote-carousel">
+          <blockquote>
+            “ Music educators often feel isolated… they're sometimes the only one in their school or in multiple schools doing this work.”
+          </blockquote>
+          <cite>– Dr. Kelly Bylica, Chair, Council for Research & Teacher Education (MMEA)</cite>
+        </div>
+    
+        <div class="quote-carousel">
+          <blockquote>
+            “Since joining four years ago, we’ve worked closely with pre-service educators to rebuild community, especially post-pandemic.”
+          </blockquote>
+          <cite>– Dr. Kelly Bylica</cite>
+        </div>
+      </div>
+      <section id="charts">
+        <h2>🎼 Data Visualization</h2>
+        <canvas id="comparisonChart" height="200"></canvas>
+        <canvas id="growthChart" height="200"></canvas>
+      </section>
+        </div>
+      </section>
+      <section id="bylica-quote">
+        <h2>🎙️ Dr. Kelly Bylica on Diversity & Creativity in Music Education</h2>
+        <p>Tap or click below to explore her powerful insight into culturally responsive and inclusive music education:</p>
+      
+        <div class="expand-box" onclick="toggleBylicaQuote()">
+          <div class="quote-toggle-header">
+            <span>✨ Expand Reflection</span>
+            <span id="arrow">▼</span>
+          </div>
+      
+          <div id="bylica-content" style="display: none;">
+            <p>With this work, Bylica and MMEA as an organization really hone in on the importance of diversity in music education, given the positive outcome these creative outlets have on students, as she’s discovered as council chair and in her independent studies throughout her time as a student and educator.</p>
+      
+            <blockquote>
+              “It's about creating structures that really help students explore in a way that is meaningful to them,” she said. <br>
+              “I think that's a really important shift about understanding that creativity is not making something look pretty, but it can be about providing someone with the tools. Creativity is the idea itself.”
+            </blockquote>
+      
+            <p>Deeper than that, music and music education also serves as a tool for resistance, an incredibly important lesson for all to be equipped with, no matter the political climate.</p>
+      
+            <blockquote>
+              “I think music education is a unique space for thinking about culturally sustaining pedagogies and what it means to have inclusive pedagogies that are deliberately a space where we can push back against hierarchies that have existed in the past. We don't always do it, but we can do it.”
+            </blockquote>
+          </div>
+        </div>
+      <section id="action">
+        <h2>🎯 Take Action</h2>
+        <p>Join the movement to make music accessible to all students. Whether you're an educator, parent, or advocate, your voice matters.</p>
+        <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+          <li>📬 Write to your local school board</li>
+          <li>🎁 Donate to organizations like Save The Music</li>
+          <li>📣 Share this site and raise awareness</li>
+        </ul>
+        <p style="margin-top: 1rem;"><strong>Contact:</strong> <a href="mailto:communications@massmea.org">communications@massmea.org</a></p>
+      </section>
+    </main>
+    <section id="photo-carousel">
+        <h2>🏫 Music & Education in Action</h2>
+        <div class="carousel">
+            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1000&q=80" alt="Teacher helping student with art/music">
+          </div>
+        </div>
+      </section>
+      </section>
+    </main>
+    <section id="flip-facts">
+        <h2>📘 Flip Cards: Quick Facts</h2>
+        <div class="flip-grid">
+      
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h3>🎓 Graduation Boost</h3>
+                <p>Tap or hover to reveal</p>
+              </div>
+              <div class="flip-card-back">
+                <p>Students with music education have a <strong>90% graduation rate</strong> compared to 72% without.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h3>📚 Academic Gains</h3>
+                <p>Tap or hover to reveal</p>
+              </div>
+              <div class="flip-card-back">
+                <p>Music students perform <strong>22% better</strong> in English and Math.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h3>🧠 Brain Development</h3>
+                <p>Tap or hover to reveal</p>
+              </div>
+              <div class="flip-card-back">
+                <p>Music supports <strong>language, memory, coordination</strong>, and emotional regulation.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h3>📉 Equity Gap</h3>
+                <p>Tap or hover to reveal</p>
+              </div>
+              <div class="flip-card-back">
+                <p>Only <strong>15%</strong> of high-poverty schools offer full-time music, vs. 45% in affluent areas.</p>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      <section id="education-map">
+        <h2>🗺️ Music Education Access Across the U.S.</h2>
+        <p>This interactive map shows disparities in music and arts education access across different school districts nationwide.</p>
+      
+        <div class="flourish-embed flourish-map scroll-fade" data-src="visualisation/22332963" style="margin-top: 1.5rem;">
+          <script src="https://public.flourish.studio/resources/embed.js"></script>
+          <noscript>
+            <img 
+              src="https://public.flourish.studio/visualisation/22332963/thumbnail" 
+              width="100%" 
+              alt="Map showing access to music education across the U.S."
+              style="border-radius: 1rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);" />
+          </noscript>
+        </div>
+      </section>
+    <!-- Music Player Toggle -->
+    <audio id="bgMusic" loop>
+      <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mp3">
+    </audio>
+    <button class="music-btn" onclick="toggleMusic()">🎵 Toggle Music</button>
+  
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 The Importance of Music Education</p>
+    </footer>
+  
+    <!-- Chart Scripts -->
+    <script>
+      function toggleMusic() {
+        const music = document.getElementById("bgMusic");
+        music.paused ? music.play() : music.pause();
+      }
+  
+      window.onload = function () {
+        const bar = document.getElementById('comparisonChart').getContext('2d');
+        new Chart(bar, {
+          type: 'bar',
+          data: {
+            labels: ['Reading', 'Math', 'Graduation'],
+            datasets: [
+              {
+                label: 'With Music',
+                data: [88, 85, 90],
+                backgroundColor: '#3b82f6'
+              },
+              {
+                label: 'Without Music',
+                data: [66, 65, 72],
+                backgroundColor: '#ef4444'
+              }
+            ]
+          },
+          options: {
+            plugins: {
+              title: {
+                display: true,
+                text: 'Academic Performance Comparison'
+              }
+            },
+            responsive: true
+          }
+        });
+  
+        const growth = document.getElementById('growthChart').getContext('2d');
+        new Chart(growth, {
+          type: 'line',
+          data: {
+            labels: ['2018', '2019', '2020', '2021', '2022', '2023'],
+            datasets: [{
+              label: 'Schools Reached by Save The Music',
+              data: [300, 550, 900, 1300, 1700, 2000],
+              borderColor: '#10b981',
+              fill: false,
+              tension: 0.4
+            }]
+          },
+          options: {
+            plugins: {
+              title: {
+                display: true,
+                text: 'Growth of Music Program Reach (2018–2023)'
+              }
+            },
+            responsive: true
+          }
+        });
+      };
+    </script>
+  </body>
+  <script>
+    function toggleBylicaQuote() {
+      const content = document.getElementById("bylica-content");
+      const arrow = document.getElementById("arrow");
+      if (content.style.display === "none") {
+        content.style.display = "block";
+        arrow.textContent = "▲";
+      } else {
+        content.style.display = "none";
+        arrow.textContent = "▼";
+      }
+    }
+  </script>
